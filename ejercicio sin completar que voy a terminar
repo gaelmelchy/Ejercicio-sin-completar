@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+int main() {
+    
+	
+	
+	int suma, resta, division, multiplicacion;
+	
+	int arreglo1[5] = {1, 2, 3, 4, 5};
+    int arreglo2[] = {6, 7, 8, 9, 10};
+    int suma[5];
+    int resta[5];
+    float division[5];
+    int multiplicacion[5];
+
+
+   printf("Que solucion desea que le muestre?");
+   printf(" \n 1. suma \n 2.resta \n 3. multiplicacion \n 4 .division");
+scanf
+
+
+
+    // Realiza la suma, resta, multiplicación y división de los elementos de los dos arreglos
+    for (int i = 0; i < 5; i++) {
+        suma[i] = arreglo1[i] + arreglo2[i];
+        resta[i] = arreglo1[i] - arreglo2[i];
+        multiplicacion[i] = arreglo1[i] * arreglo2[i];
+        division[i] = (float)arreglo1[i] / arreglo2[i];
+    }
+
+    // Imprime los resultados
+    printf("Arreglo 1: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arreglo1[i]);
+    }
+    printf("\n");
+
+    printf("Arreglo 2: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", arreglo2[i]);
+    }
+    printf("\n");
+
+    printf("Resultado de la suma: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", suma[i]);
+    }
+    printf("\n");
+
+    printf("Resultado de la resta: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", resta[i]);
+    }
+    printf("\n");
+
+    printf("Resultado de la multiplicación: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", multiplicacion[i]);
+    }
+    printf("\n");
+
+    printf("Resultado de la división: ");
+    for (int i = 0; i < 5; i++) {
+        printf("%.2f ", division[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
